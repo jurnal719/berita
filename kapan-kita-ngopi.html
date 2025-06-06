@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Peringatan Berkedip</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fffbea;
+      font-family: Arial, sans-serif;
+    }
+
+    .peringatan-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 20px 30px;
+      border: 4px solid #ff0000;
+      border-radius: 12px;
+      background-color: #fff0f0;
+      animation: kedip 1s infinite;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    .peringatan-container:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .peringatan-logo {
+      font-size: 40px;
+      color: #ff0000;
+    }
+
+    .peringatan-teks {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff0000;
+    }
+
+    @keyframes kedip {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="https://contoh.com" target="_blank" class="peringatan-container">
+    <div class="peringatan-logo">⚠️</div>
+    <div class="peringatan-teks">Ke warung beli nasi pakai tempe</div>
+    <div class="peringatan-teks">Minumnya es teh manis yang oke</div>
+    <div class="peringatan-teks">Udah lama nggak ngopi rame-rame</div>
+    <div class="peringatan-teks">IDRIS DAN BAYU KAPAN OFFDEHHH</div>
+  </a>
+</body>
+</html>
